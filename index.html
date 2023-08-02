@@ -21,12 +21,24 @@
         height: 50%;
         transform-origin: 100% 100%;
         clip-path: polygon(0 0, 100% 0, 100% 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
       }
-      .slice:nth-child(odd) {
+      .slice:nth-child(1) {
         background-color: #ff5722;
       }
-      .slice:nth-child(even) {
+      .slice:nth-child(2) {
         background-color: #f44336;
+      }
+      .slice:nth-child(3) {
+        background-color: #4caf50;
+      }
+      .slice:nth-child(4) {
+        background-color: #2196f3;
       }
       #pointer {
         position: absolute;
@@ -50,14 +62,12 @@
     </style>
   </head>
   <body>
-    <h1>Random Grudge Nullifier</h1>
+    <h1>Random Wheel Decider</h1>
     <div id="wheel">
       <div class="slice">Massage</div>
       <div class="slice">To the top</div>
       <div class="slice">Ala Monsieur</div>
       <div class="slice">To the park</div>
-      <!-- Add more slices here with different options -->
-      <!-- For example, <div class="slice"></div> for each option -->
       <div id="pointer"></div>
     </div>
     <button onclick="spin()">Spin</button>
